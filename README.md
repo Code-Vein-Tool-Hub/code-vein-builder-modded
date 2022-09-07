@@ -5,7 +5,7 @@ Code Vein Builder is a tool that lets you create and share builds with others. I
 ### How to Use
 Code Vein Builder can be used online or offline. To start creating and sharing builds, choose your preferred method below.
 
-- **Online Version:** https://Code-Vein-Tool-Hub.github.io/code-vein-builder-modded/
+- **Online Version:** https://code-vein-tool-hub.github.io/code-vein-builder-modded/
 - **Offline Version:** [download](https://github.com/Code-Vein-Tool-Hub/code-vein-builder-modded/archive/master.zip)
 
 #### Using the Offline Version

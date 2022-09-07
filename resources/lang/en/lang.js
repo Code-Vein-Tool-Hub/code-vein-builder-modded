@@ -464,7 +464,34 @@ window._lang = {
         name : 'Orion',
         desc : 'Optimized for ranged combat, featuring high willpower and dexterity.',
         owner : 'Unknown'
-      }
+      },
+
+      //Transfusion
+      A42 : {
+        name : "Queen's Blood",
+        desc : "A Blood Code with some of the queen's power acquired from your fight with the Queen.",
+        owner : 'Queen'
+      },
+
+      A43 : {
+        name : "Tantalus",
+        desc : "A blood code received from Juzo Mido. It holds his determination to ascend the ladder of evolution.",
+        owner : 'Juzo Mido'
+      },
+
+      A44 : {
+        name : "Queen's Heart",
+        desc : "A blood code with some of the queen's power received from Karen's relic.",
+        owner : 'Queen'
+      },
+
+      A45 : {
+        name : "Queen's Brain",
+        desc : "A blood code with some of the queen's power received from Silva's relic.",
+        owner : 'Queen'
+      },
+
+
     },
     
     
@@ -963,7 +990,44 @@ window._lang = {
       F17 : {
         name : 'Charisma',
         desc : "Increases your partner's stats (does not apply to player)."
-      }
+      },
+
+      // # Transfusion #
+
+      G1 : {
+        name : 'Supreme Willpower',
+        desc : "Greatly Increases Willpower at the cost of Health."
+      },
+
+      G2 : {
+        name : 'Blue Blood',
+        desc : "Reduces max HP to increase the speed of your gifts."
+      },
+
+      G3 : {
+        name : 'Inhibit Buff',
+        desc : "Applies the inhibit effect to your current weapon while your are focused."
+      },
+
+      G4 : {
+        name : 'Surpassing Strength',
+        desc : "Greatly Increases Strength at the cost of Health."
+      },
+
+      G5 : {
+        name : 'Vigorious Vitality',
+        desc : "Greatly Increases Vitality at the cost of Health."
+      },
+
+      G6 : {
+        name : 'Tribute of Blood',
+        desc : "Boosts Health and enables you to sacrifice HP to use Gifts at the cost of the amout of ichor that can be held."
+      },
+
+      G7 : {
+        name : 'Ingenious Mind',
+        desc : "Greatly Increases Mind at the cost of Health."
+      },
     },
 
 
@@ -1943,7 +2007,65 @@ window._lang = {
       F50 : {
         name : 'Radiant Barrel',
         desc : 'Shoots powerful projectiles that deal piercing damage. An offensive skill performed with a bayonet.'
+      },
+
+      // Transfusion
+
+      G1 : {
+        name : 'Dark Will',
+        desc : 'Temporarily boosts the power of your dark gifts.'
+      },
+
+      G2 : {
+        name : "Queen's Spike",
+        desc : 'Fires a thorn of judgement at the target.'
+      },
+
+      G3 : {
+        name : 'Vicious Blood',
+        desc : 'Manipuates ichor to create an ichor pool at your feet that bores into assailants.'
+      },
+
+      G4 : {
+        name : 'Inhibiting Shot',
+        desc : 'Fires a projectile at your target that inflicts inhibit.'
+      },
+
+      G5 : {
+        name : 'Inhibiting Web',
+        desc : 'Throws down treated ichor to create a trap that strips the power to use gifts from foes.'
+      },
+
+      G6 : {
+        name : 'Inhibit Trap',
+        desc : 'Scatters ichor in the area, creating a trap that inhibits the Gifts of assailants.'
+      },
+
+      G7 : {
+        name : 'Sanguine Blast',
+        desc : 'Creates a strange substance that launches ichor projectiles.'
+      },
+
+      G8 : {
+        name : 'Light Heart',
+        desc : 'Temporarily boosts the power of your light gifts.'
+      },
+
+      G9 : {
+        name : 'Bloody Snare',
+        desc : 'Throws down treated ichor to create a snare that devours foes who step into it.'
+      },
+
+      G10 : {
+        name : 'Beaded Blood',
+        desc : 'Coagulate your blood into a blood bead to feed on, slowly restoring Health'
+      },
+
+      G11 : {
+        name : 'Commit to Memory',
+        desc : 'Temporarily reduceses the cooldown on gifts you cast.'
       }
+
     },
     
     

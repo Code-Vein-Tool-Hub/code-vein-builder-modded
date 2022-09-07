@@ -905,15 +905,109 @@ CodeVeinBuilder.data.blood_code = {
       min : 26,
       max : 46
     }
+  },
+
+  //Transfusion
+
+  A42 : { // Queen's Blood
+    image : 'queens-blood',
+    dlc : 1,
+
+    mobility : _lang.mobi.normal,
+    weight : 100,
+
+    stats : {
+      str : 5,
+      dex : 6,
+      mnd : 8,
+      wil : 8,
+      vit : 4,
+      for : 5
+    },
+
+    ichor : {
+      min : 30,
+      max : 45
+    }
+  },
+
+  A43 : { // Tantalus
+    image : 'tanalus',
+    dlc : 1,
+
+    mobility : _lang.mobi.slow,
+    weight : 240,
+
+    stats : {
+      str : 10,
+      dex : 6,
+      mnd : 5,
+      wil : 9,
+      vit : 8,
+      for : 7
+    },
+
+    ichor : {
+      min : 25,
+      max : 40
+    }
+  },
+
+  A44 : { // Queen's Heart
+    image : 'queens-heart',
+    dlc : 1,
+
+    mobility : _lang.mobi.normal,
+    weight : 85,
+
+    stats : {
+      str : 3,
+      dex : 4,
+      mnd : 7,
+      wil : 7,
+      vit : 9,
+      for : 6
+    },
+
+    ichor : {
+      min : 20,
+      max : 30
+    }
+  },
+
+  A45 : { // Queen's Brain
+    image : 'queens-brain',
+    dlc : 1,
+
+    mobility : _lang.mobi.normal,
+    weight : 80,
+
+    stats : {
+      str : 5,
+      dex : 5,
+      mnd : 9,
+      wil : 8,
+      vit : 3,
+      for : 4
+    },
+
+    ichor : {
+      min : 20,
+      max : 30
+    }
   }
 };
 CodeVeinBuilder.data.order.blood_code = [
   'A0', // Queenslayer
+  'A42', //Queen's Blood
+  'A44', //Queen's Heart
+  'A45', //Queen's Brain
   'A1', // Fighter
   'A2', // Ranger
   'A3', // Caster
   'A4', // Berserker
   'A5', // Prometheus
+  'A43', //Tantalus
   'A6', // Hunter
   'A7', // Mercury
   'A8', // Hermes
@@ -1647,7 +1741,68 @@ CodeVeinBuilder.data.passive = {
     image : 'charisma',
     tree : _lang.tree.light,
     origin : 'rvm124' // Tower of Trials I
-  }
+  },
+
+  // # Transfusion #
+
+  G1 : {
+    image : 'supreme-will',
+    tree : _lang.tree.dark,
+    origin : 'A42',
+
+    stats : {
+      wil : 2
+    }
+  },
+
+  G2 : {
+    image : 'blue-blue',
+    tree : _lang.tree.dark,
+    origin : 'A42',
+    blood_code_req : 'A42' // Queen's Blood
+  },
+
+  G3 : {
+    image : 'inhibit-buff',
+    tree : _lang.tree.dark,
+    origin : 'A43'
+  },
+
+  G4 : {
+    image : 'surpassing-strength',
+    tree : _lang.tree.dark,
+    origin : 'A43',
+
+    stats : {
+      str : 2
+    }
+  },
+
+  G5 : {
+    image : 'vigorious-vitality',
+    tree : _lang.tree.dark,
+    origin : 'A44',
+
+    stats : {
+      vit : 2
+    }
+  },
+
+  G6 : {
+    image : 'tribute-of-blood',
+    tree : _lang.tree.dark,
+    origin : 'A44'
+  },
+
+  G7 : {
+    image : 'ingenius-mind',
+    tree : _lang.tree.dark,
+    origin : 'A45',
+
+    stats : {
+      mnd : 2
+    }
+  },
 };
 CodeVeinBuilder.data.order.passive = [
   'A0', // Health Boost
@@ -1668,6 +1823,7 @@ CodeVeinBuilder.data.order.passive = [
   'A15', // Max Ichor Boost
   'A21', // Rush of Blood
   'A16', // Increased Gift Speed
+  'G2',
   'A17', // Charge Accelerator
   'A18', // Debuff Build-Up
   'A19', // Revenant's Ambition
@@ -1688,6 +1844,10 @@ CodeVeinBuilder.data.order.passive = [
   'C3', // Willpower Up
   'C4', // Vitality Up
   'C5', // Perseverance Up
+  'G4',
+  'G7',
+  'G1',
+  'G5',
   'C6', // Strength/Dexterity Up
   'C7', // Strength/Willpower Up
   'C8', // Strength/Vitality Up
@@ -1717,6 +1877,7 @@ CodeVeinBuilder.data.order.passive = [
   'D14', // Lightning Buff
   'D15', // Venom Buff
   'D16', // Stun Buff
+  'G3',
   'D17', // Goddess's Smile
   'D18', // Ichor Focus
   'D19', // All Stats Up
@@ -1738,6 +1899,7 @@ CodeVeinBuilder.data.order.passive = [
   'F10', // Pioneer's Guidance
   'F11', // Fall Damage Reduction
   'F12', // Deliverance
+  'G6',
   'F13', // Tirelessness
   'F14', // Bolster
   'F15', // Revenant Dagger
@@ -3031,7 +3193,7 @@ CodeVeinBuilder.data.active = {
   C19 : { // Cognitive Zeal
     image : 'cognitive-zeal',
     tree : _lang.tree.light,
-    origin : 'cor5',
+    origin : 'A45',
 
     required : {
       mnd : 4,
@@ -4237,7 +4399,152 @@ CodeVeinBuilder.data.active = {
     
     ichor_cost : 10,
     cooldown : 15
+  },
+
+  // # Transfusion #
+
+  G1 : {
+    image : 'dark-will',
+    tree : _lang.tree.dark,
+    origin : 'A42',
+
+    required : {
+      wil : 7
+    },
+    
+    ichor_cost : 5,
+    cooldown : 5
+  },
+
+  G2 : {
+    image : 'queens-spike',
+    tree : _lang.tree.dark,
+    origin : 'A42',
+
+    required : {
+      wil : 5
+    },
+    
+    ichor_cost : 4,
+    cooldown : 5
+  },
+
+  G3 : {
+    image : 'vicious-blood',
+    tree : _lang.tree.dark,
+    origin : 'A42',
+    
+    ichor_cost : 5,
+    cooldown : 5
+  },
+
+  G4 : {
+    image : 'inhibiting-shot',
+    tree : _lang.tree.dark,
+    origin : 'A43',
+
+    required : {
+      wil : 5
+    },
+    
+    ichor_cost : 3,
+    cooldown : 8
+  },
+
+  G5 : {
+    image : 'inhibiting-web',
+    tree : _lang.tree.dark,
+    origin : 'A43',
+
+    required : {
+      dex : 4,
+      wil : 5
+    },
+    
+    ichor_cost : 4,
+    cooldown : 5
+  },
+
+  G6 : {
+    image : 'inhibit-trap',
+    tree : _lang.tree.dark,
+    origin : 'A43',
+
+    required : {
+      wil : 5
+    },
+    
+    ichor_cost : 6,
+    cooldown : 20
+  },
+
+  G7 : {
+    image : 'sanguine-blast',
+    tree : _lang.tree.dark,
+    origin : 'A43',
+
+    required : {
+      wil : 4
+    },
+    
+    ichor_cost : 4,
+    cooldown : 2
+  },
+
+  G8 : {
+    image : 'light-heart',
+    tree : _lang.tree.light,
+    origin : 'A44',
+
+    required : {
+      mnd : 7
+    },
+    
+    ichor_cost : 5,
+    cooldown : 5
+  },
+
+  G9 : {
+    image : 'bloody-snare',
+    tree : _lang.tree.dark,
+    origin : 'A44',
+
+    required : {
+      dex : 4,
+      wil : 5
+    },
+    
+    ichor_cost : 4,
+    cooldown : 5
+  },
+
+  G10 : {
+    image : 'beaded-blood',
+    tree : _lang.tree.light,
+    origin : 'A44',
+
+    required : {
+      vit : 9
+    },
+    
+    ichor_cost : 5,
+    cooldown : 15
+  },
+
+  G11 : {
+    image : 'commit-to-memory',
+    tree : _lang.tree.dark,
+    origin : 'A45',
+
+    required : {
+      mnd : 7,
+      wil : 7
+    },
+    
+    ichor_cost : 5,
+    cooldown : 5
   }
+
 };
 CodeVeinBuilder.data.order.active = [
   'A0', // Sonic Arrow
@@ -4250,10 +4557,14 @@ CodeVeinBuilder.data.order.active = [
   'A7', // Flame Spike
   'A8', // Frost Spike
   'A9', // Lightning Spike
+  'G2',
+  'G1',
+  'G8',
   'A10', // Blood Barrage
   'A11', // Flame Barrage
   'A12', // Ice Barrage
   'A13', // Lightning Barrage
+  'G7',
   'A14', // Vodnik Mass
   'A15', // Walpurgis Fire
   'A16', // Baba Yaga's Gaze
@@ -4299,16 +4610,20 @@ CodeVeinBuilder.data.order.active = [
   'A52', // Frost Turret
   'B0', // Venomous Shot
   'B1', // Stun Shot
+  'G4',
   'B2', // Slowing Shot
   'B3', // Venomous Web
   'B4', // Stun Web
+  'G5',
   'B5', // Slow Web
   'B6', // Shock Web
   'B7', // Flames of Rage
   'B8', // Venom Trap
   'B9', // Stun Trap
+  'G6',
   'B10', // Slow Trap
   'B11', // Frenzied Fire
+  'G3',
   'C0', // Blood Weapon
   'C1', // Flame Weapon
   'C2', // Frost Weapon
@@ -4341,6 +4656,8 @@ CodeVeinBuilder.data.order.active = [
   'C26', // Concentration
   'C27', // Red Shoes
   'C28', // Valiant Heart
+  'G11',
+  'G10',
   'C29', // Morale Boost
   'C30', // Time Crunch
   'C31', // Supernatural Blood

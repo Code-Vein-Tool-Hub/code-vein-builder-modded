@@ -5,8 +5,8 @@ Code Vein Builder is a tool that lets you create and share builds with others. I
 ### How to Use
 Code Vein Builder can be used online or offline. To start creating and sharing builds, choose your preferred method below.
 
-- **Online Version:** https://sethclydesdale.github.io/code-vein-builder/
-- **Offline Version:** [download](https://github.com/SethClydesdale/code-vein-builder/archive/master.zip)
+- **Online Version:** https://Code-Vein-Tool-Hub.github.io/code-vein-builder-modded/
+- **Offline Version:** [download](https://github.com/Code-Vein-Tool-Hub/code-vein-builder-modded/archive/master.zip)
 
 #### Using the Offline Version
 If you're using the offline version you'll have to unzip the files. Once you've done that, you can access Code Vein Builder by opening any of the index.html files in the browser of your choice. It should have the same experience as the online version, however, if there are any updates, you'll have to download Code Vein Builder from Github again to get the latest version.
@@ -25,7 +25,7 @@ You can use these shortcuts to undo/redo changes. (you can use the back/forward 
 
 
 ### Suggestions, Feedback, Bug Reports
-If you have any suggestions, feedback, or bugs to report, feel free to [open a new issue](https://github.com/SethClydesdale/code-vein-builder/issues) in this repository or leave a comment in [this reddit thread](https://www.reddit.com/r/codevein/comments/dszkvr/c/) to let me know. For more information, please check out the [report page](https://sethclydesdale.github.io/code-vein-builder/report/) for Code Vein Builder.
+If you have any suggestions, feedback, or bugs to report, feel free to [open a new issue](https://github.com/Code-Vein-Tool-Hub/code-vein-builder-modded/issues) in this repository or leave a comment in [this reddit thread](https://www.reddit.com/r/codevein/comments/dszkvr/c/) to let me know. For more information, please check out the [report page](https://Code-Vein-Tool-Hub/code-vein-builder-modded/report/) for Code Vein Builder.
 
 
 ### Submit a Build
